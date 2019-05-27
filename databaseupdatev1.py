@@ -38,11 +38,11 @@ ratequery = ("INSERT INTO billboard_rating (date,position,track_id) VALUES (%s,%
 # Elegxos gia to an kapoio kommati yparxi hdh ston pinaka track
 checkquery = ("SELECT id from track where title =")
 
-# Proxorame mia mera mprosta apo thn pio prosfath hmeromhnia gia na mhn ksanagemisoume thn basi me hdh yparxonta dedomena
-lastdate+=datetime.timedelta(1)
+# Proxorame mia ebdomada mprosta apo thn pio prosfath hmeromhnia gia na mhn ksanagemisoume thn basi me hdh yparxonta dedomena
+lastdate+=datetime.timedelta(7)
 
 # Enarksi gemismatos ton pinakon to while stamataei otan ftasoyme sthn shmerinh hmera,to gemisma ton pinakon arxizei me tis pio palies prosthikes kai teleiwnei stis pio prosfates - diladi stis shmerines.
-while lastdate<todate:
+while lastdate<=todate:
    # Euresi tou epomenou sabbatou apo thn hmeromhnia pou exi ekxorithi sto lastdate
    saturday = lastdate + datetime.timedelta( (5-lastdate.weekday()) % 7 )
    # Pernoume to chart tou billboard gia thn hmeromhnia pou brikame
