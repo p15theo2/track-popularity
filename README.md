@@ -23,8 +23,8 @@ Finds the newest date on the tables and then updates the database until today .I
 Deletes the entire database. If you run this and the database does not exist then it will throw an error.
 
 ##### databasesearchv2.py
- First it ask the user to input a track title . If the database contains this title then the program will print the track's chart position over the time. Then a new window will open , presenting a diagram based on those positions. The diagram is made using matplotlib plot.
- If the database does not contain this track title then the program will print "no results found" and then it will terminate.
+ First it ask the user to input a track title . If the database contains this title then the code will print the track's chart position over the time. Then a new window will open , presenting a diagram based on those positions. The diagram is made using matplotlib plot.
+ If the database does not contain this track title then the code will print "no results found" and then it will terminate.
  
  
  ### If you have any concerns/questions about the code please let me know ! . Thanks ! 
